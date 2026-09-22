@@ -23,6 +23,10 @@ body {
     align-items: center;
     border-bottom: 1px solid black;
     gap: 10px;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    z-index: 1;
 
 }
 
@@ -39,6 +43,7 @@ body {
     align-items: center;
     gap: 10px;
 
+
 }
 
 .section-one__name {
@@ -52,6 +57,7 @@ body {
     font-size: 16px;
     border: none;
     width: 50%;
+    background-color: transparent;
 
 }
 
@@ -66,6 +72,38 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
+
+}
+
+
+/* mylearning */
+
+
+.mylearning {
+
+position: relative;
+cursor: pointer;
+
+}
+
+.mylearnig__popup {
+
+position: absolute;
+border: 1px solid black;
+background-color: white;
+color: blueviolet;
+padding: 10px;
+width: 70px;
+border-radius: 10px;
+right: 0px;
+top: 30px;
+display: none;
+
+}
+
+.mylearning:hover .mylearnig__popup {
+
+display: block;
 
 }
 
@@ -98,6 +136,27 @@ body {
 .sale-image img {
 
     width: 100%;
+    position: relative;
+
+}
+
+/* Offer box */
+
+.offerbox {
+
+    width: 450px;
+    background-color: white;
+    border: 2px solid black;
+    padding: 2%;
+    position: absolute;
+    top: 200px;
+    left: 80px;
+}
+
+.offertitle {
+
+color: blueviolet;
+
 
 }
 
@@ -189,10 +248,11 @@ body {
     margin-top: 10px;
 
 }
+
 .popular-card {
 
     width: 250px;
-    
+
 
 }
 
@@ -201,7 +261,7 @@ body {
 
     width: 100%;
     height: 50%;
-   
+
 
 }
 
@@ -210,29 +270,29 @@ body {
 
 
 .footer {
-padding: 10px;
-background-color: black;
-color: white;
+    padding: 10px;
+    background-color: black;
+    color: white;
 
 }
 
 .footer-one {
 
-display: flex;
-gap: 10px;
+    display: flex;
+    gap: 10px;
 
 }
 
 .footer_s1 p {
 
-padding: 20px;
+    padding: 20px;
 
 
 }
 
 .footer_s2 p {
 
-padding: 20px;
+    padding: 20px;
 
 }
 
