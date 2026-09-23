@@ -81,29 +81,29 @@ body {
 
 .mylearning {
 
-position: relative;
-cursor: pointer;
+    position: relative;
+    cursor: pointer;
 
 }
 
 .mylearnig__popup {
 
-position: absolute;
-border: 1px solid black;
-background-color: white;
-color: blueviolet;
-padding: 10px;
-width: 70px;
-border-radius: 10px;
-right: 0px;
-top: 30px;
-display: none;
+    position: absolute;
+    border: 1px solid black;
+    background-color: white;
+    color: blueviolet;
+    padding: 10px;
+    width: 70px;
+    border-radius: 10px;
+    right: 0px;
+    top: 30px;
+    display: none;
 
 }
 
 .mylearning:hover .mylearnig__popup {
 
-display: block;
+    display: block;
 
 }
 
@@ -127,6 +127,41 @@ display: block;
     color: white;
     padding: 10px;
     border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    animation-name: bounce;
+    animation-duration: 2s;
+    cursor: pointer;
+}
+
+.categories p:hover{
+
+    animation: bounce 0.5s ease-in-out;
+    transition: 1s;
+    background-color: transparent;
+    color: blueviolet;
+
+}
+
+@keyframes bounce {
+
+    0% {
+
+        transform: translateY(0px);
+
+    }
+
+    50% {
+
+        transform: translateY(-2px);
+
+    }
+
+    100% {
+
+        transform: translateY(0px);
+
+    }
+
 }
 
 
@@ -151,11 +186,18 @@ display: block;
     position: absolute;
     top: 200px;
     left: 80px;
+    cursor: pointer;
+    transition: 3s;
+}
+
+.offerbox:hover {
+    transform: scale(1.2);
+    transition: 3s;
 }
 
 .offertitle {
 
-color: blueviolet;
+    color: blueviolet;
 
 
 }
