@@ -75,6 +75,12 @@ body {
 
 }
 
+.section__s4 {
+
+display: none;
+
+}
+
 
 /* mylearning */
 
@@ -133,7 +139,7 @@ body {
     cursor: pointer;
 }
 
-.categories p:hover{
+.categories p:hover {
 
     animation: bounce 0.5s ease-in-out;
     transition: 1s;
@@ -216,7 +222,7 @@ body {
 
 .recommended__container {
 
-    padding: 10px;
+    padding: 5px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -227,7 +233,11 @@ body {
 
 .course-card {
 
-    width: 250px;
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 10px;
+
+
 
 }
 
@@ -283,17 +293,19 @@ body {
 
 .popular__container {
 
-    padding: 10px;
+    padding: 5px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 10px;
+
 
 }
 
 .popular-card {
 
-    width: 250px;
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 10px;
 
 
 }
@@ -303,7 +315,6 @@ body {
 
     width: 100%;
     height: 50%;
-
 
 }
 
@@ -345,4 +356,67 @@ body {
     align-items: center;
     margin: 30px;
     gap: 20px;
+}
+
+
+
+/* media Queries */
+
+
+@media screen and (max-width:800px) {
+
+    body {
+
+        font-size: 10px;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+
+    .course-card {
+
+        flex-basis: 40%;
+
+
+    }
+
+    .popular-card {
+
+        flex-basis: 40%;
+    }
+
+    .categories {
+
+        display: none;
+
+    }
+   
+
+}
+
+
+@media screen and (max-width:800px) {
+
+.offerbox {
+
+    display: none;
+}
+
+}
+
+
+@media screen and (max-width:600px) {
+
+.section__s4 {
+
+display: block;
+
+}
+
+.section__s3 {
+
+    display: none;
+}
+
 }
